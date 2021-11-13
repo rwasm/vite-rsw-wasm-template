@@ -1,6 +1,5 @@
 .DS_Store
 
-# node
 node_modules
 dist
 *.local
@@ -10,7 +9,4 @@ dist
 target/
 Cargo.lock
 pkg/
-
-# rsw
-.rsw*
-wasm-test
+/.rsw
