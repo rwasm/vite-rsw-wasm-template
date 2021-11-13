@@ -7,5 +7,7 @@ Vite + Rust 💖 WebAssembly
 npm init mpl
 ```
 
+## Vite Template
+
 - wasm-react
 - wasm-vue

@@ -1,6 +1,6 @@
 # wasm-vue
 
-- [WebAssembly Series](https://github.com/lencx/z/discussions/22)
+- [WebAssembly Series](https://github.com/lencx/awesome/blob/main/WebAssembly.md)
 - [learn-wasm](https://github.com/lencx/learn-wasm)
 - [vite-plugin-rsw](https://github.com/lencx/vite-plugin-rsw) - 🦀 wasm-pack plugin for Vite
 - [rsw-node](https://github.com/lencx/rsw-node) - ⚪️ `wasm-pack build` executed in remote deployment
