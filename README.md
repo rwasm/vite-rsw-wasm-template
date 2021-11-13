@@ -1,0 +1,1 @@
+# vite-rsw-wasm-template
