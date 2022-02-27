@@ -10,7 +10,4 @@ dist
 target/
 Cargo.lock
 pkg/
-
-# rsw
-.rsw*
-wasm-test
+/.rsw

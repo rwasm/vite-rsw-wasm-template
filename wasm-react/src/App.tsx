@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import init, { greet } from 'wasm-test'
+import init, { greet } from 'rsw-hello'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +17,7 @@ function App() {
         <p>Hello WebAssembly!</p>
         <p>Vite + Rust + React</p>
         <p>
-          <button onClick={() => greet('wasm')}>
+          <button onClick={() => greet()}>
             hello wasm
           </button>
           {' '}

@@ -1,40 +1,60 @@
 # wasm-vue
 
+- [vite-plugin-rsw](https://github.com/lencx/vite-plugin-rsw) - 🦀 wasm-pack plugin for Vite
+- [rsw-rs](https://github.com/lencx/rsw-rs) - 🦞 wasm-pack based build tool
 - [WebAssembly Series](https://github.com/lencx/awesome/blob/main/WebAssembly.md)
 - [learn-wasm](https://github.com/lencx/learn-wasm)
-- [vite-plugin-rsw](https://github.com/lencx/vite-plugin-rsw) - 🦀 wasm-pack plugin for Vite
-- [rsw-node](https://github.com/lencx/rsw-node) - ⚪️ `wasm-pack build` executed in remote deployment
 
 ## Quick Start
 
-### Step1
+Step1: Install deps
 
 ```bash
-npm install
+yarn
 ```
 
-### Step2
-
-edit `vite.config.ts`
-
-```js
-// ...
-ViteRsw({
-  crates: [
-    // https://github.com/lencx/vite-plugin-rsw#plugin-options
-    'wasm-test', // custom package name
-  ]
-}),
-```
-
-### Step3
+Step2: Init rsw.toml
 
 ```bash
-npm run dev
+# yarn rsw -h
+yarn rsw init
 ```
 
-## Remote Deployment
+Step3: Generate rust crate
 
 ```bash
-npm run rsw:build
+yarn rsw new rsw-hello
+```
+
+Step4: Edit rsw.toml
+
+[rsw doc](https://github.com/lencx/rsw-rs#readme)
+
+```toml
+[[crates]]
+#! npm package name
+name = "rsw-hello"
+#! ⚠️ Note: must be set to `true`
+#！ run `npm link`: `true` | `false`, default is `false`
+link = true
+```
+
+Step5: Run rsw watch
+
+> ⚠️ Note: Do not exit the process after the command has started.
+
+```bash
+yarn watch
+```
+
+Step6: Run dev
+
+```bash
+yarn dev
+```
+
+Step7: Deploy
+
+```bash
+yarn build
 ```
