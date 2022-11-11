@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import logo from './logo.svg'
+import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.logo';
 import './App.css'
 import init, { greet } from 'rsw-hello'
 
@@ -12,51 +13,26 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello WebAssembly!</p>
-        <p>Vite + Rust + React</p>
+      <div>
+        <a href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React + WASM</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <button onClick={() => greet()}>
+          hello wasm
+        </button>
         <p>
-          <button onClick={() => greet()}>
-            hello wasm
-          </button>
-          {' '}
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://github.com/lencx/vite-plugin-rsw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Rsw Docs
-          </a>
-        </p>
-      </header>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </div>
   )
 }

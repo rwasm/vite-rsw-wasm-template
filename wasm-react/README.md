@@ -48,21 +48,13 @@ name = "rsw-hello"
 link = true
 ```
 
-Step5: Run rsw watch
-
-> ⚠️ Note: Do not exit the process after the command has started.
-
-```bash
-yarn watch
-```
-
-Step6: Run dev
+Step5: Run dev
 
 ```bash
 yarn dev
 ```
 
-Step7: Deploy
+Step6: Deploy
 
 ```bash
 yarn build

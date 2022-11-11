@@ -6,6 +6,5 @@
 import { defineComponent } from 'vue'
 import init, { greet } from 'rsw-hello'
 
-
 init()
 </script>
