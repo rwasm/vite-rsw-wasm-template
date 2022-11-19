@@ -18,6 +18,6 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.3",
     "vite-plugin-rsw": "^2.0.11",
-    "wasm-pack": "^0.10.3"
+    "wasm-pack": "0.10.2"
   }
 }
