@@ -16,6 +16,12 @@ npm init mpl@latest my-app --type wasm
 npm init mpl@latest my-app -- --type wasm
 ```
 
+Pre-Install
+
+```bash
+cargo install rsw wasm-pack
+```
+
 Step1: Install deps
 
 ```bash
